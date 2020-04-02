@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class StartApp {
 	public static void main(String[] args) {
-		int m = 9;
+		int m;
 		float x, y, z;
 		Scanner leitura = new Scanner(System.in);
 		do {
-			System.out.println("*Digite o número com a opção desejada:*");
+			System.out.println("*Digite o nÃºmero com a opÃ§Ã£o desejada:*");
 			System.out.println("1. Somar");
 			System.out.println("2. Subtrair");
 			System.out.println("3. Multiplicar");
@@ -31,7 +31,7 @@ public class StartApp {
 				System.out.println("Digite um valor para Y");
 				y = leitura.nextFloat();
 				z = x - y;
-				System.out.println("Resultado da subtração de " + x + " por " + y + " : " + z);
+				System.out.println("Resultado da subtraÃ§Ã£o de " + x + " por " + y + " : " + z);
 				System.out.println("");
 				break;
 			case 3:
@@ -40,7 +40,7 @@ public class StartApp {
 				System.out.println("Digite um valor para Y");
 				y = leitura.nextFloat();
 				z = x * y;
-				System.out.println("Resultado da multiplicação de " + x + " por " + y + " : " + z);
+				System.out.println("Resultado da multiplicaÃ§Ã£o de " + x + " por " + y + " : " + z);
 				System.out.println("");
 				break;
 			case 4:
@@ -52,19 +52,19 @@ public class StartApp {
 					y = leitura.nextFloat();
 				}
 				z = x / y;
-				System.out.println("Resultado da divisão de " + x + " por " + y + " : " + z);
+				System.out.println("Resultado da divisÃ£o de " + x + " por " + y + " : " + z);
 				System.out.println("");
 				break;
 			case 9:
 				m = 9;
 				break;
 			default:
-				System.out.println("Opção inválida! Por favor, digite uma opção correta!");
+				System.out.println("OpÃ§Ã£o invÃ¡lida! Por favor, digite uma opÃ§Ã£o correta!");
 				System.out.println("");
 				break;
 			}
 		} while (m != 9);
-		System.out.println("Você optou por sair!");
+		System.out.println("VocÃª optou por sair!");
 		leitura.close();
 	}
 }
